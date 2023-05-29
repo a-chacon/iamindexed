@@ -1,0 +1,37 @@
+      <div class="container pt-26 md:pt-30 mx-auto flex justify-center">
+        <div class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg flex flex-col xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
+          <div class="w-full px-10">
+            <table class="text-white text-xl my-4 min-w-full text-center">
+  <thead class="border-b">
+    <tr>
+      <th class="py-4 pl-2 bg-transparent text-transparent text-2xl text-left bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Engine</th>
+      <th class="text-right py-4 pr-2 bg-transparent text-transparent text-2xl text-left bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-controller="search" data-search-service-value="google" data-search-url-value="<%= @url %>" class="hover:bg-gray-800">
+      <td class="text-left flex py-4 pl-2">
+        <img class="text-center block w-8 h-8 mr-4" src="google.png" />
+        Google
+      </td>
+      <td class="text-right py-2 pr-2" data-search-target="result"><span class="loader"></span></td>
+    </tr>
+    <tr data-controller="search" data-search-service-value="bing" data-search-url-value="<%= @url %>" class="hover:bg-gray-800">
+      <td class="text-left flex py-4 pl-2">
+        <img class="text-center block w-8 h-8 mr-4" src="bing.svg" />
+        Bing
+      </td>
+      <td class="text-right py-2 pr-2" data-search-target="result"><span class="loader"></span></td>
+    </tr>
+    <tr data-controller="search" data-search-service-value="yahoo" data-search-url-value="<%= @url %>" class="hover:bg-gray-800">
+      <td class="text-left flex py-4 pl-2">
+        <img class="text-center block w-8 h-8 mr-4" src="yahoo.png" />
+        Yahoo
+      </td>
+      <td class="text-right py-2 pr-2" data-search-target="result"><span class="loader"></span></td>
+    </tr>
+  </tbody>
+</table>
+          </div>
+          </div>
+      </div>
