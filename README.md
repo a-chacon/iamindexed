@@ -1,24 +1,15 @@
-# README
+# IAMINDEXED
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple project for check if your website is indexed by different search engines at one time.
 
-Things you may want to cover:
+### Search Engines working.
 
-* Ruby version
+- Google
+- Bing
+- Yahoo
 
-* System dependencies
+### Search Engines in progress.
 
-* Configuration
+- DuckDuckGo
+- Baidu
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
