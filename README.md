@@ -1,4 +1,4 @@
-# IAMINDEXED
+# [IAMINDEXED](https://iamindexed.com)
 
 This is a very simple project for check if your website is indexed by different search engines at one time.
 

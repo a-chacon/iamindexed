@@ -13,7 +13,7 @@ class HomeController < ApplicationController
 
     render json: {
       success: result.any?,
-      data: result
+      data: result.count
     }, status: :ok
   end
 end
