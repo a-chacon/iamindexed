@@ -40,11 +40,14 @@ module SearchDomain
   # Search a domain in DuckDuckGo Engine.
   # TODO: complete this too
   def self.duckduckgo(domain, http_service: HTTP, parser_service: Nokogiri)
-    url = "https://duckduckgo.com/html?q=site%3A#{domain}&t=h_&ia=web"
+    url = "https://html.duckduckgo.com/html/?q=site%3Aa-chacon.com&hps=1&atb=v302-1&ia=web"
     headers = {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+      "Host": "duckduckgo.com",
+      "accept": "*/*",
     }
-    unparsed_page = http_service.headers(headers).follow.get(url)
+
+    unparsed_page = http_service.headers(headers).get(url)
     print(unparsed_page.code)
     parsed_page = parser_service::HTML(unparsed_page.to_s)
     print(parsed_page)
@@ -65,7 +68,7 @@ module SearchDomain
   # Search a domain in Bing Engine.
   #
   def self.bing(domain, http_service: HTTP, parser_service: Nokogiri)
-    url = "https://www.bing.com/search?q=#{domain}"
+    url = "https://www.bing.com/search?q=site%3A#{domain}"
     headers = {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
     }

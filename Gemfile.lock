@@ -90,6 +90,10 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.12.0)
+    faraday (2.7.6)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
     ffi (1.15.5)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -184,6 +188,7 @@ GEM
     reline (0.3.4)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.9.1)
       rexml (~> 3.2, >= 3.2.5)
@@ -236,6 +241,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faraday
   http
   importmap-rails
   jbuilder
