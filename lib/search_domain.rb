@@ -84,7 +84,7 @@ module SearchDomain
       results << result_hash
     end
 
-    results.select { |r| r[:link].include? domain }
+    results
   end
 
   ##
